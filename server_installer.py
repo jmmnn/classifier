@@ -15,15 +15,17 @@ GIT = "sudo apt-get install git"
 CLONE_REPO = "git clone https://github.com/jmmnn/classifier.git"
 
 #######  Python stuff
-MINICONDA = "bash ~/miniconda.sh -b -p $HOME/miniconda"
-MINICONDA_PATH = 'export PATH="$HOME/miniconda/bin:$PATH"'
+CONDA_GET = "wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh"
+CONDA_INSTALL = "bash ~/miniconda.sh -b -p $HOME/miniconda"
+CONDA_PATH = 'export PATH="$HOME/miniconda/bin:$PATH"'
 
 #FIRST list of commands in sequence ## Uncomment these for 1st install
 cmds = [
     #UPDATE,
     GIT,
-    MINICONDA,
-    MINICONDA_PATH,
+    CONDA_GET,
+    CONDA_INSTALL,
+    CONDA_PATH,
     CLONE_REPO
     ]
 
