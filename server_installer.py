@@ -12,20 +12,18 @@ import os
 #Server setup
 UPDATE ="sudo apt-get update"
 GIT = "sudo apt-get install git"
-#PIP = "sudo apt-get install python-pip"
-#JAVA = "sudo apt-get install default-jre"
-CLONE_REPO = "git clone https://github.com/jmmnn/text_extractor.git"
+CLONE_REPO = "git clone https://github.com/jmmnn/classifier.git"
 
 #######  Python stuff
-#TIKA = "sudo pip install -U tika"
+MINICONDA = "bash ~/miniconda.sh -b -p $HOME/miniconda"
+MINICONDA_PATH = 'export PATH="$HOME/miniconda/bin:$PATH"'
 
 #FIRST list of commands in sequence ## Uncomment these for 1st install
 cmds = [
-    UPDATE,
+    #UPDATE,
     GIT,
-    PIP,
-    JAVA,
-    TIKA,
+    MINICONDA,
+    MINICONDA_PATH,
     CLONE_REPO
     ]
 
