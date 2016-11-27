@@ -18,12 +18,12 @@ Get installer script:
 Run installer script, say yes when necessary:  
 `$ python3 server_installer.py`  
 
-Set path for miniconda python  
-`$ export PATH="$HOME/miniconda/bin:$PATH"`  
+Open a NEW TERMINAL
+`$ cd classifier"`  
 
 Crete new environment  
-`$ conda create --name classifier scikit-learn`
+`$ python3 conda_setup.py`
 
-Activate the environemnt  
+Activate the new environemnt  
 `source activate classifier`
 
