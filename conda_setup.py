@@ -11,11 +11,6 @@ dir = os.getcwd()
 
 #List commands to execute.
 
-#Server setup
-UPDATE ="sudo apt-get update"
-GIT = "sudo apt-get install git"
-CLONE_REPO = "git clone https://github.com/jmmnn/classifier.git"
-
 #######  Python stuff
 CONDA_ENV = "conda create --name classifier scikit-learn lxml"
 
