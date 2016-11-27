@@ -18,7 +18,6 @@ CLONE_REPO = "git clone https://github.com/jmmnn/classifier.git"
 
 #######  Python stuff
 CONDA_ENV = "conda create --name classifier scikit-learn lxml"
-CONDA_ACTIVATE = "source activate classifier"
 
 #FIRST list of commands in sequence ## Uncomment these for 1st install
 cmds = [
@@ -27,7 +26,7 @@ cmds = [
 
 #SECOND list of commands in sequence ## Uncomment these for 1st install
 cmds2 = [
-    CONDA_ACTIVATE
+
     ]
 
 
