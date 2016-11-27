@@ -22,8 +22,8 @@ CONDA_INSTALL = "bash miniconda.sh -p miniconda"  #add -b before -p for unattend
 
 #FIRST list of commands in sequence ## Uncomment these for 1st install
 cmds = [
-    #UPDATE,
-    #GIT,
+    UPDATE,
+    GIT,
     CONDA_GET,
     CONDA_INSTALL,
     CLONE_REPO
