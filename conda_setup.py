@@ -17,21 +17,17 @@ GIT = "sudo apt-get install git"
 CLONE_REPO = "git clone https://github.com/jmmnn/classifier.git"
 
 #######  Python stuff
-CONDA_GET = "wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh"
-CONDA_INSTALL = "bash miniconda.sh -p miniconda"  #add -b before -p for unattended install
+CONDA_ENV = "conda create --name classifier scikit-learn lxml"
+CONDA_ACTIVATE = "source activate classifier"
 
 #FIRST list of commands in sequence ## Uncomment these for 1st install
 cmds = [
-    #UPDATE,
-    #GIT,
-    CONDA_GET,
-    CONDA_INSTALL,
-    CLONE_REPO
+    CONDA_ENV
     ]
 
 #SECOND list of commands in sequence ## Uncomment these for 1st install
 cmds2 = [
-
+    CONDA_ACTIVATE
     ]
 
 
